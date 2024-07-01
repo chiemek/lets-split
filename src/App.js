@@ -28,7 +28,7 @@ const initialFriends = [
 
 const App = () => {
   const [toggleAdd, setToggleAdd] = useState(false);
-  const [AddFriend, setAddFriend] = useState("");
+
   const handleToggle = () => {
     setToggleAdd(() => !toggleAdd);
   };

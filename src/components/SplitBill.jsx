@@ -12,7 +12,7 @@ const SplitBill = () => {
       <label htmlFor="">🧑🏼‍🤝‍🧑🏻 X Expense</label>
       <input type="text" disabled />
       <label htmlFor="">🧑🏼 Who is Paying the bill</label>
-      <select name="" id="">
+      <select name="">
         <option value="user">You</option>
         <option value="Friend">X</option>
       </select>
