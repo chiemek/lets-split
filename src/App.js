@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import Friends from "./components/Friends";
 import AddFriend from "./components/AddFriend";
+import SplitBill from "./components/SplitBill";
+import Button from "./components/Button";
 
 const initialFriends = [
   {
@@ -25,12 +27,21 @@ const initialFriends = [
 ];
 
 const App = () => {
+  const [toggleAdd, setToggleAdd] = useState(false);
+  const [AddFriend, setAddFriend] = useState("");
+  const handleToggle = () => {
+    setToggleAdd(() => !toggleAdd);
+  };
   return (
     <div className="app">
       <div className="sidebar">
         <Friends data={initialFriends} />
-        <AddFriend />
+        {toggleAdd && <AddFriend />}
+        <Button onClick={handleToggle}>
+          {toggleAdd ? "CLose" : "Add Friend"}
+        </Button>
       </div>
+      <SplitBill />
     </div>
   );
 };

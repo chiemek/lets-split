@@ -1,13 +1,14 @@
 import React from "react";
+import Button from "./Button";
 
 const AddFriend = () => {
   return (
     <form className="form-add-friend">
-      <label htmlFor="">🧑🏼‍🤝‍🧑🏻Friend name</label>
+      <label htmlFor="">🧑🏼‍🤝‍🧑🏻FriendName</label>
       <input type="text" name="" id="" />
       <label htmlFor="">🧮Image Url</label>
       <input type="text" name="" id="" />
-      <button className="button">Add</button>
+      <Button>Add</Button>
     </form>
   );
 };

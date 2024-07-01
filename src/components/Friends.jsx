@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const Friends = ({ data }) => {
   return (
@@ -15,7 +16,7 @@ const Friends = ({ data }) => {
             {data.balance < 0 &&
               `You owe ${data.name} ${Math.abs(data.balance)}$`}
           </p>
-          <button className="button">Select</button>
+          <Button>Select</Button>
         </li>
       ))}
     </ul>
